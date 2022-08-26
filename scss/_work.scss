@@ -1,6 +1,6 @@
 #page3 {
     height: 800px;
-    background-color: $lightblue;
+    background-color: $darkblue;
     padding: 5% 0;
 }
 
@@ -148,3 +148,8 @@
     word-wrap: break-word;
   }
   
+@media screen and(max-width: 320px) {
+    #page3 {
+        height: 1200px;
+    }
+}
