@@ -1,0 +1,90 @@
+h1, h2 {
+    color: $orange;
+    font-family: $fontFamily-primary;
+}
+
+h1 {
+    font-weight: 700;
+
+    span {
+        color: $white;
+    }
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    color: $white;
+    font-family: $fontFamily-primary;
+    font-size: 20px;
+
+    span {
+        color: $orange;
+    }
+}
+
+
+.btn {
+    background-color: $orange;
+    border-color: $orange;
+    color: $white;
+    font-family: $fontFamily-secondary;
+    font-size: 15px;
+    outline-color: $orange;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $orange;
+        color: $white;
+    }
+}
+    
+    
+
+
+#page1 {
+    height: 800px;
+    background-color: $darkblue;
+    padding: 5% 0;
+    
+}
+
+.picture {
+   
+    img {
+        max-width: 300px;
+        height: auto;
+        background-color: gray;
+    }
+}
+
+.intro {
+    width: 400px;
+}
+
+.home, .about {
+    gap: 10%;
+}
+
+.socialMedia {
+    padding-top: 100px;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            a {
+                font-size: 30px;
+                color: $white;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+
+}
+}
+

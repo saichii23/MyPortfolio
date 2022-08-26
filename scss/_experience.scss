@@ -1,0 +1,153 @@
+#page4 {
+    height: 800px;
+    background-color: $darkblue;
+    padding: 5% 0;
+}
+
+.experience {
+
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+.accordion {
+    position: relative;
+    margin: 60px auto;
+    width: 80%;
+    box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+
+  }
+  
+  [id*=open-accordion], [id*=close-accordion] {
+    background: $lightblue;
+    border-bottom: 1px solid $orange;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 99%;
+  }
+  
+  [id*=close-accordion] {
+    display: none;
+    
+  }
+  
+  .accordion a {
+    color: $white;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid $orange;
+    border-top: 1px solid $orange;
+    font-family: $fontFamily-primary;
+
+  }
+  
+  [id*=open-accordion]:after, [id*=close-accordion]:after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    z-index: 999;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  
+  .target-fix {
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .accordion-content {
+    background: $white;
+    color: $darkblue;
+    height: 0;
+    margin: -1px auto 0;
+    padding: 0 2.5%;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+
+    dt {
+        font-family: $fontFamily-primary;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    dd {
+        font-family: $fontFamily-secondary;
+    }
+
+    ul {
+
+        li {
+            text-align: justify;
+            font-family: $fontFamily-primary;
+
+        }
+    }
+
+  }
+  
+  .accordion span:target ~ .accordion-content {
+    display: block;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  
+  .accordion span:target ~ [id*=close-accordion] {
+    display: block;
+  }
+  
+  .accordion span:target ~ [id*=open-accordion] {
+    display: none;
+  }
+  
+  .accordion span:target ~ [id*=close-accordion]:after {
+    border-top: 10px solid $orange;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  #open-accordion1 {
+    border-top: none;
+
+    &:hover {
+        color: $orange;
+    }
+
+  }
+
+  #open-accordion2 {
+    
+    &:hover {
+        color: $orange;
+    }
+
+
+  }
+
+  #open-accordion3 {
+
+    &:hover {
+        color: $orange;
+    }
+
+  }

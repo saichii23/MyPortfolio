@@ -1,0 +1,72 @@
+nav {
+    background-color: $lightblue;
+    height: 70px;
+    margin: auto;
+    box-shadow: -1px 15px 11px 0px rgba(0,0,0,0.73);
+    -webkit-box-shadow: -1px 15px 11px 0px rgba(0,0,0,0.73);
+    -moz-box-shadow: -1px 15px 11px 0px rgba(0,0,0,0.73);
+
+}
+.container {
+    max-width: 1000px;
+    
+}
+
+.navbar-brand {
+    color: $white;
+    width: 50px;
+    height: 50px;
+    background-color: $orange;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: $fontFamily-secondary;
+
+    &:hover {
+        color: $white;
+    }
+
+}
+
+.nav-link {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $fontFamily-primary;
+    font-size: 15px;
+
+
+    &:hover, &:active {
+        color: $orange !important;
+
+    }
+
+   
+}
+.navbar-toggler-icon {
+    background-image: url(../images/nav-toggler-icon.png);
+}
+
+.navbar-nav {
+
+    .show > .nav-link, .nav-link.active {
+    color: $orange;
+    }
+}
+
+#footer {
+    height: 20px;
+    background-color: $lightblue;
+    box-shadow: 1px -12px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -12px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -12px 5px 0px rgba(0,0,0,0.75);
+
+    div {
+        align-self: center;
+        div {
+            color: gray;
+            font-size: 10px;
+        }
+    
+    }
+
+}

@@ -1,0 +1,88 @@
+#page5 {
+    height: 800px;
+    background-color: $darkblue;
+    padding: 5% 0;
+
+}
+
+.contact-left {
+    width: 600px;
+    padding: 50px;
+    ul {
+        list-style-type: none;
+        
+        li {
+           font-size: 15px;
+           color: $white;
+            i {
+                margin-right: 10px;
+            }
+            
+        }
+    }
+}
+
+form {
+    align-self: baseline;
+    padding: 40px 30px;
+    box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 0px 12px 11px rgba(0,0,0,0.83);
+    background-color: $darkblue;
+    
+    input {
+        width: 350px;
+        height: 50px;               
+        padding-left: 5px;
+        font-family: $fontFamily-primary;
+        font-size: 15px;
+        
+    }
+
+    input[type="text"].text::-webkit-input-placeholder,
+    input[type="text"].text {
+        color: $orange;
+        border-color: $orange;
+        background-color: transparent;      
+
+        &:focus {
+            outline: none;
+        }
+       
+       
+    }
+    
+    input[type="email"].email::-webkit-input-placeholder,
+    input[type="email"].email {
+        
+        background-color: transparent;      
+        border-color: $white;
+       
+        color: $white;
+       
+    }
+    textarea {
+        width: 350px;
+        height: 150px;
+        background-color: transparent;
+        border-color: $white;
+        padding-left: 5px;
+        font-family: $fontFamily-primary;
+        font-size: 15px;
+        color: $white;
+    }
+    textarea::placeholder {
+        color: $white;
+    }
+    .submit {
+        width: 100px;
+        height: 30px;
+        font-family: $fontFamily-primary;
+        font-size: 15px;
+        color: $white;
+        background-color: $orange;    
+        border: none;  
+        margin-right: 0;
+        margin-left: 250px;
+    }
+}
