@@ -1,6 +1,6 @@
 #page3 {
-    height: 800px;
-    background-color: $darkblue;
+    height: 650px;
+    background-color: $lightblue;
     padding: 5% 0;
 }
 
@@ -24,7 +24,6 @@
         }
     }
     
-
 }
 .image-grid {
     display: flex;
@@ -148,8 +147,8 @@
     word-wrap: break-word;
   }
   
-@media screen and(max-width: 320px) {
+@media screen and (max-width: 320px) {
     #page3 {
-        height: 1200px;
+        height: 1000px;
     }
 }

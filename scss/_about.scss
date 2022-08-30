@@ -1,5 +1,4 @@
 #page2 {
-    height: 800px;
     background-color: $lightblue;
     padding: 5% 0;
 }
@@ -14,10 +13,9 @@
 }
 
 #skills {
-    height: 90vh;
+    height: 750px;
     background-color: $darkblue;
     padding: 5% 0;
-    
 }
 
 .skills {
@@ -51,6 +49,8 @@ h5 {
 }
 
 .about {
+    padding-bottom: 5%;
+    height: 650px;
 
     .intro {
 
@@ -61,3 +61,42 @@ h5 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about {
+        height: 900px;
+    }
+    .skills {
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    #picture2 {
+        width: 300px;
+        height: auto;
+
+        img {
+            width: 280px;
+            height: auto;
+        }
+    }
+    
+    .skills {
+
+        ul {
+            gap: 8px;
+            li {
+                a {
+                    img {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    #skills {
+        height: 500px;
+    }
+}

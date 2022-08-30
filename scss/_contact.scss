@@ -1,6 +1,6 @@
 #page5 {
-    height: 800px;
-    background-color: $darkblue;
+    height: 650px;
+    background-color: $lightblue;
     padding: 5% 0;
 
 }
@@ -85,4 +85,52 @@ form {
         margin-right: 0;
         margin-left: 250px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        margin-right: 20px;
+
+        input {
+            width: 250px;
+        }
+
+        textarea {
+            width: 250px;
+        }
+
+        .submit {
+            margin-left: 150px;
+        }
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    #page5 {
+        height: 850px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    form {
+        margin-right: 0;
+        padding: 10px;
+
+        input {
+            width: 280px;
+        }
+
+        textarea {
+            width: 280px;
+        }
+
+        .submit {
+            margin-left: 180px;
+        }
+    }
+    .contact-left {
+        width: 300px;
+        padding: 20px;
+    }
+    
 }
